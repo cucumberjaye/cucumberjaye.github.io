@@ -26,7 +26,7 @@ for (let i = 0; i < buttons.length; i++) {
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
     document.getElementById("inner").style.display = "none";
-    document.getElementById("form").style.display = "display";
+    document.getElementById("form").style.display = "block";
     
     /*if (document.getElementById("form").style.isVisible) {
         let cardData = document.getElementById("cardData").value;
