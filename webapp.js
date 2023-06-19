@@ -25,10 +25,7 @@ for (let i = 0; i < buttons.length; i++) {
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
-    document.getElementById("inner").style.display = "none";
-    document.getElementById("form").style.display = "block";
-    
-    /*if (document.getElementById("form").style.isVisible) {
+    if (document.getElementById("form").style.isVisible) {
         let cardData = document.getElementById("cardData").value;
         let amount = document.getElementById("amount").value;
         tg.sendData({
@@ -36,8 +33,9 @@ Telegram.WebApp.onEvent("mainButtonClicked", function() {
             amount: amount,
         });
     } else {
-        
-    }*/
+        document.getElementById("inner").style.display = "none";
+    document.getElementById("form").style.display = "block";
+    }
 });
 
 
