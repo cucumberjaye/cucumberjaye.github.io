@@ -50,25 +50,18 @@ body {
     text-align: center;
 }
 
-.box {
-    max-width: 390px;
-    padding-top: 50px;
+input {
+    width: 90%;
+    outline: none;
+    margin: 10px 5%;
+    padding: 15px 10px;
+    font-size: 14px;
+    border: 2px solid silver;
+    border-radius: 5px;
 }
 
-#cardData {
-    width: 80%;
-    height: 35px;
-    resize: none;
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-#amount {
-    width: 80%;
-    height: 35px;
-    resize: none;
-    padding: 8px;
-    box-sizing: border-box;
+input:focus {
+    border-color: #db5d5d;
 }
 
 /*
