@@ -43,8 +43,32 @@ body {
     background: lightgreen;
 }
 
-.usercard {
+
+
+#form {
+    display: none;
     text-align: center;
+}
+
+.box {
+    max-width: 390px;
+    padding-top: 50px;
+}
+
+#cardData {
+    width: 80%;
+    height: 35px;
+    resize: none;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#amount {
+    width: 80%;
+    height: 35px;
+    resize: none;
+    padding: 8px;
+    box-sizing: border-box;
 }
 
 /*

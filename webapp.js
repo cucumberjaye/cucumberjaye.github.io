@@ -25,10 +25,23 @@ for (let i = 0; i < buttons.length; i++) {
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
-    tg.sendData(bank);
-    window.close();
-    window.open('second_page.html');
+   
 });
+
+Telegram.WebApp.onEvent("mainButtonClicked", function() {
+    if (document.getElementById("form").style.isVisible) {
+        let cardData = document.getElementById("cardData").value
+        let amount = document.getElementById("amount").value
+        tg.sendData({
+            card_data: cardData,
+            amount: amount,
+        });
+    } else {
+        document.getElementById("inner").style.display = "none"
+        document.getElementById("form").style.display = "display"
+    }
+});
+
 
 
 
