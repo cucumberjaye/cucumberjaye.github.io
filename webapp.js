@@ -25,17 +25,18 @@ for (let i = 0; i < buttons.length; i++) {
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
-    if (document.getElementById("form").style.display == "display") {
+    document.getElementById("inner").style.display = "none";
+    document.getElementById("form").style.display = "display";
+    /*if (document.getElementById("form").style.display == "display") {
         let cardData = document.getElementById("cardData").value;
         let amount = document.getElementById("amount").value;
         tg.sendData({
             card_data: cardData,
             amount: amount,
         });
-    } else {
-        document.getElementById("inner").style.display = "none";
-        document.getElementById("form").style.display = "display";
-    }
+    } else {*/
+   
+   // }
 });
 
 
