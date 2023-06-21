@@ -30,7 +30,7 @@ body {
     display: inline-block;
     padding: 10px 20px;
     border: none;
-    color: var(--tg-them-button-text-color);
+    color: #FFFFFF;
     background: var(--tg-them-button-color);
     border-radius: 10px;
     text-transform: uppercase;
@@ -51,6 +51,7 @@ body {
 
 p {
     text-align: center;
+    color: #FFFFFF;
 }
 
 input {
