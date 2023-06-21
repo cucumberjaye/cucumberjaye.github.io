@@ -21,8 +21,18 @@ for (let i = 0; i < buttons.length; i++) {
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
+    document.getElementById("error").innerText = "";
     if (document.getElementById("form").style.display == "block") {
+        let cardData = document.getElementById("cardData").value;
         let amount = document.getElementById("amount").value;
+        if (cardData.length < 1) {
+            document.getElementById("error").innerText = "card data can`t be empty";
+            return 
+        }
+        if (amount.length < 1) {
+            document.getElementById("error").innerText = "amount can`t be empty";
+            return 
+        }
         tg.sendData(amount);
         tg.close();
     } else {
