@@ -49,6 +49,10 @@ body {
     padding-top: 50px;
 }
 
+p {
+    text-align: center;
+}
+
 input {
     width: 90%;
     outline: none;
