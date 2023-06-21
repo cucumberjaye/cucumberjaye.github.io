@@ -14,13 +14,9 @@ for (let i = 1; i < 7; i++) {
 
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function() {
-        if (tg.MainButton.isVisible) {
-            tg.MainButton.hide();
-        } else {
-            bank = buttons[i].title;
-            tg.MainButton.setText("Selected "+bank+", next");
-            tg.MainButton.show();
-        }
+        bank = buttons[i].title;
+        tg.MainButton.setText("Selected "+bank+", next");
+        tg.MainButton.show();
     });
 }
 
@@ -28,6 +24,7 @@ tg.MainButton.setText("Next");
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
     if (document.getElementById("form").style.display == "block") {
+        document.getElementById("amount").value = "block"
         let amount = document.getElementById("amount").value;
         tg.sendData(amount);
         tg.close();
