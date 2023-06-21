@@ -33,7 +33,6 @@ body {
     color: var(--tg-them-button-color);
     background: var(--tg-them-button-text-color);
     border-radius: 10px;
-    color: #fff;
     text-transform: uppercase;
     font-weight: 700;
 
