@@ -30,6 +30,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function() {
     if (document.getElementById("form").style.isVisible) {
         let amount = document.getElementById("amount").value;
         tg.sendData(amount);
+        tg.close();
     } else {
         document.getElementById("inner").style.display = "none";
         document.getElementById("form").style.display = "block";
