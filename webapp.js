@@ -21,7 +21,7 @@ for (let i = 0; i < buttons.length; i++) {
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
-   // document.getElementById("error").innerText = "";
+    document.getElementById("error").innerText = '';
     if (document.getElementById("form").style.display == "block") {
         let cardData = document.getElementById("cardData").value;
         let amount = document.getElementById("amount").value;
