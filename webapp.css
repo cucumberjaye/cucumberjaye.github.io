@@ -9,6 +9,7 @@ body {
 .container {
     max-width: 390px;
     padding-top: 20px;
+    align-items: center;
 }
 
 .inner {
